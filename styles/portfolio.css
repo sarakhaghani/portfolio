@@ -9,6 +9,35 @@ body {
   font-family: var(--default-font-family);
 }
 
+.logo {
+  max-height: 41px;
+}
+nav {
+  padding-top: 20px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  font-family: var(--default-font-family);
+  margin-left: 15px;
+}
+nav li.active a {
+  color: var(--branding-color);
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 150ms ease-in-out;
+}
+nav a:hover {
+  color: var(--branding-color);
+}
+ul {
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
