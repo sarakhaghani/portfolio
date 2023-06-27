@@ -151,6 +151,16 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 960px) {
+  nav {
+    padding-top: 15px;
+  }
+  nav li {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  nav ul {
+    margin-right: 20px;
+  }
   .hero h1 {
     font-size: 55px;
   }
