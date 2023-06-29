@@ -4,11 +4,45 @@
   --default-font-family: "Poppins", sans-serif;
   --secondary-color: #f9f7fe;
 }
+
+.logo {
+  max-height: 41px;
+}
+nav {
+  padding-top: 20px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  font-family: var(--default-font-family);
+  margin-left: 15px;
+}
+nav li.active a {
+  color: var(--branding-color);
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 150ms ease-in-out;
+}
+nav a:hover {
+  color: var(--branding-color);
+}
+ul {
+  padding: 0;
+}
+
 .content-container h1 {
   color: black;
   font-size: 64px;
   line-height: 80px;
   font-family: var(--heading-font-family);
+}
+
+.content-container div .works-content {
+  margin-top: 60px;
 }
 
 .content-container h2 {
@@ -28,6 +62,7 @@
 }
 .photo {
   max-width: 100%;
+  margin-bottom: 50px;
 }
 a.btn-branding {
   color: white;
@@ -39,10 +74,13 @@ a.btn-branding {
   font-family: var(--default-font-family);
 }
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 .content {
   margin: 20px;
+}
+.content-container div .works-content {
+  margin-top: 50px;
 }
 .content p {
   margin-right: 20px;
@@ -50,7 +88,60 @@ a.btn-branding {
 p.img-description {
   margin: 0%;
 }
+footer {
+  margin-bottom: 60px;
+}
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin-bottom: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  transition: all 150ms ease-in-out;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer .social-links a {
+  margin: 20px;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  padding: 10px 16px;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
+}
 @media (max-width: 960px) {
+  nav {
+    padding-top: 15px;
+  }
+  nav li {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  nav ul {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+
+  .content-container h1 {
+    font-size: 29px;
+    line-height: 47px;
+  }
+  .content-container h2 {
+    font-size: 20px !important;
+  }
   .photo {
     margin-top: 50px;
   }
@@ -58,7 +149,19 @@ p.img-description {
     text-align: center;
     padding: 0;
   }
+  .content-container div .works-content {
+    margin-top: 0px;
+  }
   .content p {
     margin: 0%;
+  }
+  footer .contact-box {
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .contact-box .btn-branding {
+    font-size: 15px;
+    padding: 15px 20px;
+    margin-top: 5px;
   }
 }
